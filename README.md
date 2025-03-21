@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# 🚀 E-commerce AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Giới thiệu
 
-## Available Scripts
+E-commerce AI là một ứng dụng web tích hợp trí tuệ nhân tạo, giúp người dùng:
 
-In the project directory, you can run:
+- **Phân loại ảnh**: Tải ảnh lên và nhận diện sản phẩm thông qua AI.
+- **Phân tích nhận xét**: Đánh giá cảm xúc của khách hàng dựa trên nhận xét.
+- **Gợi ý sản phẩm**: Cung cấp đề xuất sản phẩm dựa trên từ khóa tìm kiếm.
 
-### `npm start`
+Ứng dụng được xây dựng với **ReactJS (Ant Design)** cho frontend và sử dụng **ExpressJS + AI (TensorFlow, Hugging Face API)** cho backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Công nghệ sử dụng
 
-### `npm test`
+- **Frontend**: ReactJS, Ant Design
+- **Backend**: Python, TensorFlow, Hugging Face API
+- **Deploy**: Vercel (Frontend), Render (Backend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Cài đặt và chạy dự án
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1️⃣ Yêu cầu
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js >= 16.x
+- npm hoặc yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2️⃣ Clone repository
 
-### `npm run eject`
+```sh
+ git clone https://github.com/phantuanthanh1582000/frontend_ai_final.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3️⃣ Cài đặt dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm install  # Hoặc yarn install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4️⃣ Chạy ứng dụng
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+npm start  # Hoặc yarn start
+```
 
-## Learn More
+Sau khi chạy, mở trình duyệt và truy cập: `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📌 Hướng dẫn sử dụng
 
-### Code Splitting
+### 🔍 Phân loại ảnh
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Nhấn vào nút `Tải ảnh lên` để chọn ảnh.
+2. Hệ thống sẽ phân loại ảnh và hiển thị kết quả với độ chính xác.
 
-### Analyzing the Bundle Size
+### 📝 Phân tích nhận xét
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Nhập nhận xét của bạn vào ô nhập liệu.
+2. Nhấn `Phân tích` để xem kết quả đánh giá AI về nhận xét.
 
-### Making a Progressive Web App
+### 🎯 Gợi ý sản phẩm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Nhập từ khóa sản phẩm cần tìm kiếm.
+2. Nhấn `Nhận gợi ý`, hệ thống sẽ đề xuất các sản phẩm phù hợp.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🌍 API Backend
 
-### Deployment
+**Base URL:** `https://backend-ai-final.onrender.com`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 📌 Endpoints
 
-### `npm run build` fails to minify
+- **POST `/classify_image`**: Nhận diện sản phẩm từ ảnh tải lên.
+- **POST `/analyze_review`**: Phân tích cảm xúc từ nhận xét của khách hàng.
+- **POST `/recommend_products`**: Gợi ý sản phẩm dựa trên từ khóa.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🌍 Deploy
+
+- **Frontend**: [https://frontend-ai-final.vercel.app/](https://frontend-ai-final.vercel.app/)
+- **Backend**: [https://backend-ai-final.onrender.com](https://backend-ai-final.onrender.com)
+
+---
+
+## 📜 License
+
+MIT License.
+
+---
+
+## ✨ Tác giả
+
+**Phan Tuan Thanh**  
+📧 Email: tphan10932@gmail.com  
+🔗 GitHub: [phantuanthanh1582000](https://github.com/phantuanthanh1582000)
