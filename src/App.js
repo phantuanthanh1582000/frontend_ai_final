@@ -3,7 +3,7 @@ import { Upload, Button, Input, Card, List, Spin, message, Image } from "antd";
 import { UploadOutlined, SearchOutlined } from "@ant-design/icons";
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://backend-ai-final.onrender.com";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
